@@ -73,7 +73,7 @@ class Area_figuras:
 cuadrado1 = Area_figuras(4, 0)
 cuadrado1.area_cuadrado()
 triangulo1 = Area_figuras(4, 5)
-triangulo1.area_triangulo()
+triangulo1.area_triangulo()#aaaaaa
 """
 # Encapsulación: es ocultar los detalles internos de una clase y exponer solo la interfaz pública
 
