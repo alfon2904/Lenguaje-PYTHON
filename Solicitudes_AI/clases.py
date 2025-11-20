@@ -52,7 +52,7 @@ persona1.saludar()
 persona2 = Persona_intro("Luis", 25, "médico", "Universidad de Harvard")
 persona2.saludar()
 print(persona1.escuela)
-print(persona2.escuela)"""
+print(persona2.escuela)
 
 #Tercer ejemplo: algoritmo calcular área de figuras geométricas
 
@@ -73,7 +73,38 @@ class Area_figuras:
 cuadrado1 = Area_figuras(4, 0)
 cuadrado1.area_cuadrado()
 triangulo1 = Area_figuras(4, 5)
-triangulo1.area_triangulo()#aaaaaa
+triangulo1.area_triangulo()"""
+
+#cuarto ejemplo: Encapsulación en clases
+#Cuenta bancaria
+
+class Saldo_cuenta:
+  def __init__(self, titular, saldo_inicial=0):
+    self.titular = titular
+    self.__saldo = saldo_inicial  # atributo privado
+
+  def depositar(self, cantidad):
+    if cantidad > 0:
+      self.__saldo += cantidad
+      print(f"Depósito de {cantidad} realizado. Nuevo saldo: {self.__saldo}")
+    else:
+      print("Cantidad a depositar debe ser positiva.")
+
+  def retirar(self, cantidad):
+    if 0 < cantidad <= self.__saldo:
+      self.__saldo -= cantidad
+      print(f"Retiro de {cantidad} realizado. Nuevo saldo: {self.__saldo}")
+    else:
+      print("Cantidad a retirar inválida o saldo insuficiente.")
+
+  def mostrar_saldo(self):
+    print(f"El saldo actual es: {self.__saldo}")
+
+
+cuenta1 = Saldo_cuenta("Juan Guillermi", 10000)
+cuenta1.depositar(5000)
+cuenta1.retirar(3000)
+cuenta1.mostrar_saldo()
 """
 # Encapsulación: es ocultar los detalles internos de una clase y exponer solo la interfaz pública
 
