@@ -52,7 +52,7 @@ persona1.saludar()
 persona2 = Persona_intro("Luis", 25, "médico", "Universidad de Harvard")
 persona2.saludar()
 print(persona1.escuela)
-print(persona2.escuela)
+print(persona2.escuela)"""
 
 #Tercer ejemplo: algoritmo calcular área de figuras geométricas
 
@@ -70,14 +70,16 @@ class Area_figuras:
   def area_cuadrado(self):
     print(f"El area del cuadrado es {self.base ** 2}") #** es potencia
 
-cuadrado1 = Area_figuras(4, 0)
+cuadrado1 = Area_figuras(4)
 cuadrado1.area_cuadrado()
 triangulo1 = Area_figuras(4, 5)
-triangulo1.area_triangulo()"""
+triangulo1.area_triangulo()
+circulo1 = Area_figuras(radio=3)
+circulo1.area_circulo()
 
 #cuarto ejemplo: Encapsulación en clases
 #Cuenta bancaria
-
+"""
 class Saldo_cuenta:
   def __init__(self, titular, saldo_inicial=0):
     self.titular = titular
@@ -105,7 +107,7 @@ cuenta1 = Saldo_cuenta("Juan Guillermi", 10000)
 cuenta1.depositar(5000)
 cuenta1.retirar(3000)
 cuenta1.mostrar_saldo()
-"""
+
 # Encapsulación: es ocultar los detalles internos de una clase y exponer solo la interfaz pública
 
 # Crear una clase para llamar a la AI de OpenAI, DeepSeek O LO QUE SEA
