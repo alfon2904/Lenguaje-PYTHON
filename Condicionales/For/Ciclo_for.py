@@ -58,3 +58,6 @@ print(animales_mayus)
 pares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 == 0]
 print(pares)
 
+# Muestra los números impares de una lista
+impares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 != 0]
+print(impares)
