@@ -59,5 +59,5 @@ pares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 == 0]
 print(pares)
 
 # Muestra los números impares de una lista
-impares = [num for num in [1, 2, 3, 4, 5, 6] if num % 2 != 0]
+impares = [num for num in [10, 11, 13, 14, 15, 16] if num % 2 != 0]
 print(impares)
